@@ -1736,3 +1736,25 @@ function disableVotingUI() {
 
 // Initialize the game when the page loads
 window.addEventListener('load', initGame);
+
+// Changelog functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const changelogToggle = document.getElementById('changelog-toggle');
+    const changelogContent = document.getElementById('changelog-content');
+    const closeChangelog = document.querySelector('.close-changelog');
+
+    changelogToggle.addEventListener('click', function() {
+        changelogContent.classList.toggle('active');
+    });
+
+    closeChangelog.addEventListener('click', function() {
+        changelogContent.classList.remove('active');
+    });
+
+    // Close changelog when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!changelogContent.contains(event.target) && !changelogToggle.contains(event.target)) {
+            changelogContent.classList.remove('active');
+        }
+    });
+});

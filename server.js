@@ -83,6 +83,11 @@ io.on('connection', (socket) => {
       socket.emit('game-join-error', { message: 'Name already taken in this game' });
       return;
     }
+    // Check if game has already started
+    if (game.currentRound) {
+      socket.emit('game-join-error', { message: 'This game has already started. Please join another game or create your own.' });
+      return;
+    }
     const player = {
       id: socket.id,
       name: playerName,
