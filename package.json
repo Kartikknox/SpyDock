@@ -1,0 +1,28 @@
+{
+  "name": "spydock",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["game", "spy", "social", "multiplayer"],
+  "author": "",
+  "license": "ISC",
+  "description": "A social deduction game where players try to identify the spy among them",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.3",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^11.6.1",
+    "socket.io": "^4.7.5",
+    "cors": "^2.8.5"
+  }
+}
