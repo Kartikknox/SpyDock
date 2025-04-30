@@ -34,4 +34,4 @@ SpyDock is a client-server application built for real-time multiplayer gaming. T
 - Deployed on Render with CORS configured for the production URL.
 - Static files served via Express.
 
-- To run this Project you just need to downlaod and you need to install node js in your platform and start the server with node server.js
+- To run this Project you just need to downlaod and you need to install node js in your platform and start the server with this server line code "node server.js"
