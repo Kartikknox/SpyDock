@@ -1,3 +1,3 @@
 # SpyDock
 SpyDock is a thrilling multiplayer social deduction game where players must identify the spy among them. Built with Node.js, Express, Socket.IO, and Vite, SpyDock offers real-time gameplay with a sleek, responsive interface.
-view the live poeject - https://spydock.onrender.com
+view the live project - https://spydock.onrender.com
